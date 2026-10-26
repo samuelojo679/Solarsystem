@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background: #000000;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.solar-system {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    background-image: url("image/galaxy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.solar-system::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.25;
+}
+
+
+.title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fffb00;
+    font-size: 34px;
+    z-index: 30;
+    white-space: nowrap;
+}
+
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-1 {
+    width: 130px;
+    height: 130px;
+}
+
+.orbit-2 {
+    width: 180px;
+    height: 180px;
+}
+
+.orbit-3 {
+    width: 235px;
+    height: 235px;
+}
+
+.orbit-4 {
+    width: 290px;
+    height: 290px;
+}
+
+.orbit-5 {
+    width: 365px;
+    height: 365px;
+}
+
+.orbit-6 {
+    width: 440px;
+    height: 440px;
+}
+
+.orbit-7 {
+    width: 515px;
+    height: 515px;
+}
+
+.orbit-8 {
+    width: 590px;
+    height: 590px;
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    text-align: center;
+}
+
+.sun img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sun span {
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+.planet {
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+}
+
+.planet img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.planet span {
+    display: block;
+    margin-top: 4px;
+    color: #ffffff;
+    font-size: 13px;
+    white-space: nowrap;
+    text-shadow: 0 0 5px #000000;
+}
+
+.mercury {
+    width: 25px;
+    height: 25px;
+    top: calc(50% - 50px);
+    left: calc(50% + 45px);
+    transform: translate(-50%, -50%);
+}
+
+.venus {
+    width: 38px;
+    height: 38px;
+    top: calc(50% + 65px);
+    left: calc(50% + 65px);
+    transform: translate(-50%, -50%);
+}
+
+.earth {
+    width: 43px;
+    height: 43px;
+    top: calc(50% + 15px);
+    left: calc(50% - 115px);
+    transform: translate(-50%, -50%);
+}
+
+
+.mars {
+    width: 36px;
+    height: 36px;
+    top: calc(50% - 125px);
+    left: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+
+
+.jupiter {
+    width: 75px;
+    height: 75px;
+    top: calc(50% + 135px);
+    left: calc(50% - 130px);
+    transform: translate(-50%, -50%);
+}
+
+
+.saturn {
+    width: 70px;
+    height: 70px;
+    top: calc(50% - 185px);
+    left: calc(50% + 115px);
+    transform: translate(-50%, -50%);
+}
+
+.saturn img {
+    width: 120px;
+    height: 70px;
+    margin-left: -25px;
+}
+
+.uranus {
+    width: 50px;
+    height: 50px;
+    top: calc(50% + 185px);
+    left: calc(50% + 165px);
+    transform: translate(-50%, -50%);
+}
+
+.neptune {
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 175px);
+    left: calc(50% - 155px);
+    transform: translate(-50%, -50%);
+}
